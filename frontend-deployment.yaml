@@ -14,7 +14,7 @@ spec:
         tier: frontend
     spec:
       imagePullSecrets:
-      - name: ghcr
+      - name: ghcr-key
       containers:
       - name: php-redis
         image: ghcr.io/gu-fan/hellonode
