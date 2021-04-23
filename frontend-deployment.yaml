@@ -13,6 +13,8 @@ spec:
         app: guestbook
         tier: frontend
     spec:
+      imagePullSecrets:
+      - name: ghcr-key
       containers:
       - name: php-redis
         image: ghcr.io/gu-fan/hellonode
